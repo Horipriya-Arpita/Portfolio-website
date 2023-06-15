@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horipriya Arpita Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo name.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Achievements</a></li>
+                    <li><a href="#">Hobbies</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav> 
+            <div class="header-text">
+                <p>UT/UX Designer</p>
+                <h1>Hi, I'm <span>Horipriya Das Arpita</span></h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/arpita-2.jpg ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>I am currently pursuing my undergraduate degree in Software Engineering at SUST, and I am absolutely passionate about exploring new things. I believe that there is always something new to learn, and I strive to challenge myself every day to grow both as a person and as a programmer.
+
+                        In recent times, I have been focusing on enhancing my competitive programming skills. Apart from these, I have a few hobbies that keep me grounded and help me relax. I love to draw and create art, and I find it to be a great way to express myself. I also enjoy singing and find it a great stress reliever.
+                        
+                        I am an avid learner who is always looking for opportunities to grow and explore new things, and I am excited to see where my journey takes me next.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">SKill</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Looking For Internship opportunity </span><br>Check Out My CV</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.Sc in Software Engineering</span><br>Shahjalal University of Science and Technology, Sylhet<br>2020 - Present (CGPA - 3.86)</li>
+                                <li><span>HSC</span><br>MurariChand College, Sylhet <br> 2017-2019 (GPA - 5.00)</li>
+                                <li><span>SSC</span><br>Derai Govt Girls' School, Derai, Sunamganj <br> 2015 - 2017 (GPA - 5.00)</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
