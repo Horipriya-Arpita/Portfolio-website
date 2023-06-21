@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horipriya Arpita Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
 </head>
@@ -14,39 +15,46 @@
         <a href="#" class="logo">Portfolio</a>
 
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a> 
-            <a href="#">Achievements</a>
-            <a href="#">Hobbies</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="#" style="--i:1;" class="active">Home</a>
+            <a href="#" style="--i:2;">About</a>
+            <a href="#" style="--i:3;">Projects</a> 
+            <a href="#" style="--i:4;">Achievements</a>
+            <a href="#" style="--i:5;">Hobbies</a>
+            <a href="#" style="--i:6;">Services</a>
+            <a href="#" style="--i:7;">Contact</a>
         </nav>
     </header>
-    <!--<div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo name.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Achievements</a></li>
-                    <li><a href="#">Hobbies</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav> 
-            <div class="header-text">
-                <p>UT/UX Designer</p>
-                <h1>Hi, I'm <span>Horipriya Das Arpita</span></h1>
+
+    <section class="home" id="home">
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-github' ></i></a>
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm Horipriya Das Arpita </h1>
+            <h3>Software Engineer</h3>
+            <p>Currently pursuing a B.Sc. in Software Engineering at 
+                Shahjalal University of Science and Technology(SUST) in Sylhet, Bangladesh.
+            </p>
+            
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="images/My project.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
+         
+    </section>
 
-
-
-    <div id="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -56,58 +64,376 @@
                     <h1 class="sub-title"> About Me</h1>
                     <p>I am currently pursuing my undergraduate degree in Software Engineering at SUST, and I am absolutely passionate about exploring new things. I believe that there is always something new to learn, and I strive to challenge myself every day to grow both as a person and as a programmer.
 
-                        In recent times, I have been focusing on enhancing my competitive programming skills. Apart from these, I have a few hobbies that keep me grounded and help me relax. I love to draw and create art, and I find it to be a great way to express myself. I also enjoy singing and find it a great stress reliever.
+                        <span><br>In recent times, I have been focusing on enhancing my competitive programming skills. Apart from these, I have a few hobbies that keep me grounded and help me relax. I love to draw and create art, and I find it to be a great way to express myself. I also enjoy singing and find it a great stress reliever.</span>
                         
-                        I am an avid learner who is always looking for opportunities to grow and explore new things, and I am excited to see where my journey takes me next.</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">SKill</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                                <li><span>Web Development</span><br>Web App Development</li>
-                                <li><span>App Development</span><br>Building Android/iOS apps</li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Looking For Internship opportunity </span><br>Check Out My CV</li>
-                                
-                            </ul>
-                        </div>
-
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>B.Sc in Software Engineering</span><br>Shahjalal University of Science and Technology, Sylhet<br>2020 - Present (CGPA - 3.86)</li>
-                                <li><span>HSC</span><br>MurariChand College, Sylhet <br> 2017-2019 (GPA - 5.00)</li>
-                                <li><span>SSC</span><br>Derai Govt Girls' School, Derai, Sunamganj <br> 2015 - 2017 (GPA - 5.00)</li>
-                            </ul>
-                        </div>
+                    <span><br>I am an avid learner who is always looking for opportunities to grow and explore new things, and I am excited to see where my journey takes me next.</span></p>
+                        
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <span class="section-subtitle">My Technical Level</span>
+
+        <div class="skill-container container grid">
+            <div>
+                <!--Skill 1-->
+                <div class="skills-content">
+                    <div class="skills-header">
+                        <i></i>
+                        <div>
+                            <h1 class="skills-title">Frontend developer</h1>
+                        </div>
+                        <i></i>
+                    </div>
+
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">HTML</h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">CSS</h3>
+                                <span class="skills-number">65%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">JavaScript</h3>
+                                <span class="skills-number">20%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-js"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Skill 1-->
+                <div class="skills-content">
+                    <div class="skills-header">
+                        <i></i>
+                        <div>
+                            <h1 class="skills-title">App development</h1>
+                        </div>
+                        <i></i>
+                    </div>
+
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Android Studio</h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-android"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Java</h3>
+                                <span class="skills-number">85%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-java"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Kotlin</h3>
+                                <span class="skills-number">20%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-kotlin"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Skill 1-->
+                <div class="skills-content">
+                    <div class="skills-header">
+                        <i></i>
+                        <div>
+                            <h1 class="skills-title">Backend development</h1>
+                        </div>
+                        <i></i>
+                    </div>
+
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Firebase</h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-firebase"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">MySQL</h3>
+                                <span class="skills-number">40%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-mysql"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">PHP</h3>
+                                <span class="skills-number">20%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-php"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Skill 1-->
+                <div class="skills-content">
+                    <div class="skills-header">
+                        <i></i>
+                        <div>
+                            <h1 class="skills-title">Language</h1>
+                        </div>
+                        <i></i>
+                    </div>
+
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">C</h3>
+                                <span class="skills-number">90%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-c"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">C++</h3>
+                                <span class="skills-number">85%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-cpp"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Java</h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-javal"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Skill 1-->
+                <div class="skills-content">
+                    <div class="skills-header">
+                        <i></i>
+                        <div>
+                            <h1 class="skills-title">Graphics & UI/UX Design </h1>
+                        </div>
+                        <i></i>
+                    </div>
+
+                    <div class="skills-list grid">
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Canva</h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-canva"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Adobe Photoshop</h3>
+                                <span class="skills-number">45%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-adobephoto"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">Adobe Illustrator</h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage skills-adobeill"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
 
-<script>
+            </div>
+        </div>
+    </section>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+    <section class="Projects" id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project-box">
+                    <h2>Portfolio</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+        
+                <div class="project-box">
+                    <h2>SUST Medical Center</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
 
-</script>
--->
+                <div class="project-box">
+                    
+                    <h2>Eat it</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="project-box">
+                    
+                    <h2>Behula</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="project-box">
+                    
+                    <h2>Athenic Quest</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h1 class="sub-title">Achivements</h1>
+            <div class="achievements-list">
+                <div class="achievements-box">
+                    <h2>Portfolio</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+        
+                <div class="achievements-box">
+                    <h2>SUST Medical Center</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="achievements-box">
+                    
+                    <h2>Eat it</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="achievements-box">
+                    
+                    <h2>Behula</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="achievements-box">
+                    
+                    <h2>Athenic Quest</h2>
+                    <p>Personal Reponsive Portfolio of mine</p>
+                    <ul>
+                        <li>Language : html and css</li>
+                        <li>Framework : Vanila Js</li>
+                        <li>Environment : Vs Code </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 </body>
 </html>
