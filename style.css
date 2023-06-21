@@ -432,21 +432,59 @@ body{
     line-height: 1.5;
 }
 
+.section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #3cf;
+    font-weight: 700;
+}
+
+.section-subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #de5b71;
+    font-weight: 600;
+}
+
+.skills-section{
+    background: pink;
+    width: 99%;
+    margin-left: 50px;
+    margin-right: 20px;
+}
 .skills-container {
-    row-gap: 0;
+    row-gap: 30px;
 }
 
 .skills-header{
     display: flex;
     align-items: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: 25px;
     cursor: pointer;
 }
 
+.skills-icon,
+.skills-arrow{
+    font-size: 2rem;
+    color: white;
+}
+
+.skills-icon{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #3cf;
+}
+
 .skills-title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: #f06;
+    margin-top: 20px;
 }
 
 .skills-arrow{
@@ -454,16 +492,21 @@ body{
     transition: .4s;
 }
 
+.skills-list{
+    row-gap: 1.5rem;
+    padding-left: 2.9rem;
+}
+
 .skills-titles{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .skills-name{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -471,18 +514,154 @@ body{
 .skills-percentage{
     height: 5px;
     border-radius: .25rem;
+    
 }
 
 .skills-bar{
     background-color: rgb(212, 134, 212);
+    margin-left: 20px;
+}
+
+.skills-percentage{
+    display: block;
+    background-color: #3c0751;
 }
 
 .skills-html{
     width: 70%;
 }
 
+.skills-css{
+    width: 65%;
+}
 
+.skills-js{
+    width: 30%;
+}
 
+.skills-android{
+    width: 70%;
+}
+
+.skills-java{
+    width: 85%;
+}
+
+.skills-kotlin{
+    width: 20%;
+}
+
+.skills-firebase{
+    width: 70%;
+}
+
+.skills-mysql{
+    width: 50%;
+}
+
+.skills-php{
+    width: 20%;
+}
+
+.skills-canva{
+    width: 70%;
+}
+
+.skills-adobephoto{
+    width: 40%;
+}
+
+.skills-adobeill{
+    width: 70%;
+}
+
+.skills-close .skills-list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills-open .skills-list{
+    height: max-content;
+    margin-bottom: 25px;
+}
+
+.skills-open .skills-arrow{
+    transform: rotate(-180deg);
+}
+
+/*...............qualification............*/
+/*.qualification-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.qualification-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.qualification-button{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.qualification-button:hover{
+    color: #3cf;
+}
+
+.qualification-icon {
+    font-size: 1.8rem;
+    margin-right: 25px;
+}
+.qualification-data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualification-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.qualification-subtitle{
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.qualification-calendar{
+    font-size: 18px;
+    color: #3cf;
+}
+
+.qualification-rounder{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #de5b71;
+    border-radius: 50%;
+}
+
+.qualification-line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(231, 7, 7);
+    transform: translate(6px, -7px);
+}
+
+.qualification[data-content]{
+    display: none;
+}
+
+.qualification-active[data-content]{
+    display: block;
+}
+
+/*...............Projects............*/
 
 #projects{
     padding: 30px 10px 10px 10px;
