@@ -6,9 +6,12 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #0c1022;
-    /*background: linear-gradient(90deg, #0c1022,#686e84,#2b376c,#3d4e97,#3cf);*/
     color: #fff;
 }
 
@@ -62,12 +65,12 @@ body{
 
 }
 
+/*......................Home...............*/
 .home{
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
-    /*padding: 0  10%;*/
     position: relative;
     justify-content: space-between;
     background: #0c1022;
@@ -419,17 +422,19 @@ body{
 .about-col-2 p {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    /*margin: 20px 0px 40px;*/
     margin: 10px 50px 10px 20px;/*top right bottom left*/
-    /*margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 100px;*/
     color: #fff;
     font-weight: 500;
     margin: 20px 0;
     padding: 20px;
     text-align: justify;
     line-height: 1.5;
+}
+
+/*..................Skills................*/
+
+.skills-section{
+    padding: 100px 0;
 }
 
 .section-title{
@@ -451,8 +456,9 @@ body{
 }
 
 .skills-section{
-    background: pink;
-    width: 99%;
+    background: transparent;
+    width: 100%;
+    max-width: 1400px;
     margin-left: 50px;
     margin-right: 20px;
 }
@@ -590,13 +596,19 @@ body{
 }
 
 /*...............qualification............*/
-/*.qualification-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
+
+.qualification-section{
+    padding: 100px 0;
+    position: relative;
+    background: transparent;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 250px;
+    margin-right: 20px;
+}
 
 .qualification-tabs{
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
@@ -608,7 +620,7 @@ body{
     cursor: pointer;
 }
 .qualification-button:hover{
-    color: #3cf;
+    color: rgb(232, 96, 33);
 }
 
 .qualification-icon {
@@ -618,18 +630,29 @@ body{
 .qualification-data{
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
-    column-gap: 1.5rem;
+    column-gap: 1.2rem;
+    /*background: #f06;*/
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 26px;
 }
 
 .qualification-title{
     font-size: 20px;
     font-weight: 600;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
 }
 
 .qualification-subtitle{
-    display: inline-block;
+    display: block;
+    line-height: 1.9rem;
     font-size: 18px;
     margin-bottom: 10px;
+    color: #f06;
 }
 
 .qualification-calendar{
@@ -653,22 +676,66 @@ body{
     transform: translate(6px, -7px);
 }
 
-.qualification[data-content]{
+.qualification .data-content{
     display: none;
 }
 
-.qualification-active[data-content]{
-    display: block;
+
+/*..................Experience.........*/
+
+.experience{
+    padding: 100px 0;
+    
+}
+
+.experience-content{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.experience-title{
+    font-size: 35px;
+    font-weight: 700;
+    color: #3cf;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.experience-subtitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #9370DB;
+    margin-top: 30px;
+}
+
+.experience-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.education.btn3{
+    position: absolute;
+    font-size: 18px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 /*...............Projects............*/
 
 #projects{
-    padding: 30px 10px 10px 10px;
+    padding: 100px 10px 10px 10px;
 }
 .projects-list{
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
       grid-gap: 40px;
       margin-top: 50px;
       margin-left: 10px;
@@ -718,9 +785,12 @@ body{
 }
 
 
+/* ...............Achivements................... */
+
 #achievements{
-    padding: 30px 10px 10px 10px;
+    padding: 100px 10px 10px 10px;
 }
+
 .achievements-list{
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
@@ -729,7 +799,7 @@ body{
       margin-left: 10px;
 }
 .achievements-list div{
-    background: linear-gradient(90deg,#f06,#de5b71,#eb4ca6);
+    background: linear-gradient(90deg,rgb(63, 9, 129),#6cb8f6);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -768,6 +838,81 @@ body{
     display: inline-block;
 }
 .achievements-list div:hover{
-     background: linear-gradient(90deg,rgb(63, 9, 129),#6cb8f6);;
+     background: linear-gradient(90deg,#f06,#de5b71,#eb4ca6);
      transform: translateY(-10px);
+}
+
+/*.............contact..........*/
+
+.contact{
+    padding: 100px 10px 10px 10px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    margin-left: 30px;
+}
+.contact-right{
+    flex-basis: 60%;
+    margin-right: 30px;
+}
+.contact-left h1{
+    margin-left: 30px;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #9370DB;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #9370DB;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ADD8E6;
+    transform: translateY(-5px);
+}
+.contact-left.btn4{
+    /*position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    background: #6495ED;*/
+    position: relative;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626 ;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    position: relative;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
 }

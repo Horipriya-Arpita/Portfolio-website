@@ -15,13 +15,14 @@
         <a href="#" class="logo">Portfolio</a>
 
         <nav class="navbar">
-            <a href="#" style="--i:1;" class="active">Home</a>
-            <a href="#" style="--i:2;">About</a>
-            <a href="#" style="--i:3;">Projects</a> 
-            <a href="#" style="--i:4;">Achievements</a>
-            <a href="#" style="--i:5;">Hobbies</a>
-            <a href="#" style="--i:6;">Services</a>
-            <a href="#" style="--i:7;">Contact</a>
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#skills" style="--i:3;">Skills</a> 
+            <a href="#qualification" style="--i:4;">Qualification</a>
+            <a href="#experience" style="--i:5;">Experience</a>
+            <a href="#projects" style="--i:6;">Projects</a>
+            <a href="#achievements" style="--i:7;">Achievements</a>
+            <a href="#contact" style="--i:8;">Contact</a>
         </nav>
     </header>
 
@@ -84,7 +85,7 @@
                     <div class="skills-header">
                         <i class='bx bx-code-curly skills-icon'></i>
                         <div>
-                            <h1 class="skills-title">Frontend developer</h1>
+                            <h1 class="skills-title">Frontend developement</h1>
                         </div>
                         <i class='bx bx-chevron-down skills-arrow'></i>
                     </div>
@@ -126,7 +127,7 @@
                 <!--Skill 1-->
                 <div class="skills-content skills-close">
                     <div class="skills-header">
-                        <i class='bx bx-code-curly skills-icon'></i>
+                        <i class='bx bx-terminal skills-icon'></i>
                         <div>
                             <h1 class="skills-title">App development</h1>
                         </div>
@@ -170,7 +171,7 @@
                 <!--Skill 1-->
                 <div class="skills-content skills-close">
                     <div class="skills-header">
-                        <i class='bx bx-code-curly skills-icon'></i>
+                        <i class='bx bx-code-alt skills-icon'></i>
                         <div>
                             <h1 class="skills-title">Backend development</h1>
                         </div>
@@ -214,7 +215,7 @@
                 <!--Skill 1-->
                 <div class="skills-content skills-close">
                     <div class="skills-header">
-                        <i class='bx bx-code-curly skills-icon'></i>
+                        <i class='bx bxs-component skills-icon' ></i>
                         <div>
                             <h1 class="skills-title">Language</h1>
                         </div>
@@ -258,7 +259,7 @@
                 <!--Skill 1-->
                 <div class="skills-content skills-close">
                     <div class="skills-header">
-                        <i class='bx bx-code-curly skills-icon'></i>
+                        <i class='bx bx-palette skills-icon'></i>
                         <div>
                             <h1 class="skills-title">Graphics & UI/UX Design </h1>
                         </div>
@@ -304,85 +305,93 @@
         </div>
     </section>
 
-    <section class="qualification-section">
+    <section class="qualification-section" id="qualification">
         <h2 class="section-title">Qualification</h2>
-        <div class="qualification-tabs">
-            <div class="qualification-button button-flex">
-                <i class='bx bxs-graduation qualification-icon' ></i>
-                Education
+        <span class="section-subtitle">My personal journey</span>
+
+        <div class="qualification-container container">
+            <div class="qualification-tabs">
+                <div class="qualification-button button-flex qualification-active" data-target="#education">
+                    <i class='bx bxs-graduation qualification-icon' ></i>
+                    Education
+                </div>
             </div>
 
-            <div class="qualification-button button-flex">
-                <i class='bx bxs-graduation qualification-icon' ></i>
-                Experience
-            </div>
-
-            <div class="qualification-sections">
-                <!--Section1-->
-                <div class="qualification-content qualification-active" data-content id="education">
-                    <!--con 1-->
-                    <div class="qualification-data">
-                        <div>
-                            <h3 class="qualification-title">Software Engineer</h3>
-                            <span class="qualification-subtitle">Shahjalal University of Science and Technology</span>
-                            <div class="qualification-calendar">
-                                <i class='bx bx-calendar'></i>
-                                2020 - 2024
-                            </div>
-                        </div>
-
-                        <div>
-                            <span class="qualification-rounder"></span>
-                            <span class="qualification-line"></span>
+        </div>
+        
+        <div class="qualification-sections">
+            <!--Section1-->
+            <div class="qualification-content qualification-active" data-content id="education">
+                <!--con 1-->
+                <div class="qualification-data">
+                    <div>
+                        <h3 class="qualification-title">Software Engineer<br></h3>
+                        <span class="qualification-subtitle">Shahjalal University of Science and Technology (CGPA - 3.86)</span>
+                        <div class="qualification-calendar">
+                            <i class='bx bx-calendar'></i>
+                            2020 - present
                         </div>
                     </div>
 
-                    <!--con 2-->
-                    <div class="qualification-data">
-                        <div></div>
-
-                        <div>
-                            <span class="qualification-rounder"></span>
-                            <span class="qualification-line"></span>
-                        </div>
-
-                        <div>
-                            <h3 class="qualification-title">HSC</h3>
-                            <span class="qualification-subtitle">Murarichand College, Sylhet</span>
-                            <div class="qualification-calendar">
-                                <i class='bx bx-calendar'></i>
-                                2017 - 2019
-                            </div>
-                        </div>
-
-                        
-                    </div>
-
-                    <!--con 3-->
-                    <div class="qualification-data">
-                        <div>
-                            <h3 class="qualification-title">SSC</h3>
-                            <span class="qualification-subtitle">Derai Govt Girls High School</span>
-                            <div class="qualification-calendar">
-                                <i class='bx bx-calendar'></i>
-                                2020 - 2024
-                            </div>
-                        </div>
-
-                        <div>
-                            <span class="qualification-rounder"></span>
-                            <span class="qualification-line"></span>
-                        </div>
+                    <div>
+                        <span class="qualification-rounder"></span>
+                        <span class="qualification-line"></span>
                     </div>
                 </div>
 
-                <!--Section2-->
-                <div class="qualification-content" data-content id="experience">
+                <!--con 2-->
+                <div class="qualification-data">
+                    <div></div>
 
+                    <div>
+                        <span class="qualification-rounder"></span>
+                        <span class="qualification-line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="qualification-title">HSC<br></h3>
+                        <span class="qualification-subtitle">Murarichand College, Sylhet  (GPA - 5.00)</span>
+                        <div class="qualification-calendar">
+                            <i class='bx bx-calendar'></i>
+                            2017 - 2019
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <!--con 3-->
+                <div class="qualification-data">
+                    <div>
+                        <h3 class="qualification-title">SSC<br></h3>
+                        <span class="qualification-subtitle">Derai Govt Girls High School  (GPA - 5.00)</span>
+                        <div class="qualification-calendar">
+                            <i class='bx bx-calendar'></i>
+                            2012 - 2017
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="qualification-rounder"></span>
+                        <span class="qualification-line"></span>
+                    </div>
                 </div>
             </div>
+
+            
         </div>
 
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="experience-content">
+            <h2 class="experience-title">Experience</h2>
+            <span class="experience-subtitle">Looking for Internship Opportunity </span>
+            <p>Check out My CV</p>
+       
+            <a href="#" class="btn btn3">Download CV</a>
+
+        </div>
     </section>
 
     <section class="Projects" id="projects">
@@ -401,12 +410,11 @@
                 </div>
         
                 <div class="project-box">
-                    <h2>SUST Medical Center</h2>
-                    <p>Personal Reponsive Portfolio of mine</p>
+                    <h2>Database Management System</h2>
+                    <p>Sust Medical Center Database Management System </p>
                     <ul>
-                        <li>Language : html and css</li>
-                        <li>Framework : Vanila Js</li>
-                        <li>Environment : Vs Code </li>
+                        <li>Database : Sql, PHP </li>
+                        <li>Environment : Xampp </li>
                     </ul>
                     <a href="#">Learn more</a>
                 </div>
@@ -414,11 +422,11 @@
                 <div class="project-box">
                     
                     <h2>Eat it</h2>
-                    <p>Personal Reponsive Portfolio of mine</p>
+                    <p>It's a basic food-order app. Customer enters, Signs up/in, See restaurant list,Choose food that he/she wish to have, Orders it through card payment.</p>
                     <ul>
-                        <li>Language : html and css</li>
-                        <li>Framework : Vanila Js</li>
-                        <li>Environment : Vs Code </li>
+                        <li>Language : Java</li>
+                        <li>Environment : Android Studio</li>
+                        <li>Database : Firebase </li>
                     </ul>
                     <a href="#">Learn more</a>
                 </div>
@@ -426,11 +434,11 @@
                 <div class="project-box">
                     
                     <h2>Behula</h2>
-                    <p>Personal Reponsive Portfolio of mine</p>
+                    <p>A game of Behula's Journey with her dead husband in a raft towards Heaven.</p>
                     <ul>
-                        <li>Language : html and css</li>
-                        <li>Framework : Vanila Js</li>
-                        <li>Environment : Vs Code </li>
+                        <li>Language : Java </li>
+                        <li>Framework : Gui</li>
+                        <li>Environment : Netbeans </li>
                     </ul>
                     <a href="#">Learn more</a>
                 </div>
@@ -438,10 +446,10 @@
                 <div class="project-box">
                     
                     <h2>Athenic Quest</h2>
-                    <p>Personal Reponsive Portfolio of mine</p>
+                    <p>6 different types of game like 15puzzles, Tic-tac-toe, Lights-out, Four in a line, Pathe-finder, Guess the function </p>
                     <ul>
-                        <li>Language : html and css</li>
-                        <li>Framework : Vanila Js</li>
+                        <li>Language : C++</li>
+                        <li>Framework : Vs studio </li>
                         <li>Environment : Vs Code </li>
                     </ul>
                     <a href="#">Learn more</a>
@@ -455,59 +463,60 @@
             <h1 class="sub-title">Achivements</h1>
             <div class="achievements-list">
                 <div class="achievements-box">
-                    <h2>Portfolio</h2>
-                    <p>Personal Reponsive Portfolio of mine</p>
-                    <ul>
-                        <li>Language : html and css</li>
-                        <li>Framework : Vanila Js</li>
-                        <li>Environment : Vs Code </li>
-                    </ul>
+                    <i class='bx bxs-graduation'></i>
+                    <h2>ICPC SUST SWE TECHNOVENT</h2>
+                    <p>Participated in ICPC Orbitax SUST SWE Technovent Powered by DSI, Orbitax and Cefalo.
+                        I was a dedicated volunteer at this event </p>
+                    
                     <a href="#">Learn more</a>
                 </div>
         
                 <div class="achievements-box">
-                    <h2>SUST Medical Center</h2>
-                    <p>Personal Reponsive Portfolio of mine</p>
-                    <ul>
-                        <li>Language : html and css</li>
-                        <li>Framework : Vanila Js</li>
-                        <li>Environment : Vs Code </li>
-                    </ul>
+                    <i class='bx bxs-graduation'></i>
+                    <h2>6th National Girls' Programming Contest</h2>
+                    <p>Participated in 6th National Girls' Programming Contest NGPC(2022) 
+                        hosted by Daffodil International University, Powered By BDosn, ICT Bangladesh.</p>
+                
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="achievements-box">
+                    <i class='bx bxs-graduation'></i>
+                    <h2>Ada lovelace Programming Competition</h2>
+                    <p>Participated in Ada lovelace Programming Competition 2022 hosted by University of 
+                        Asia Pacific, Dhaka, organized by BDosn.</p>
+                    
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="achievements-box">
+                    <i class='bx bxs-graduation'></i>
+                    <h2>BdApps National Hackathon 2022</h2>
+                    <p>Participated in BdApps National Hackathon 2022 Regional Round in Sylhet, Organized by
+                        SWE Society, SUST, Powered by Robi.
+                        Our idea got shortlisted among numerous teams</p>
+                    
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="achievements-box">
+                    <i class='bx bxs-graduation'></i>
+                    <h2>300+ Problem solved</h2>
+                    <p>Solved more than 300 problems in different platforms like Codeforces,
+                        CodeChef, UVa, Vjudge and AtCoder.
+                        </p>
                     <a href="#">Learn more</a>
                 </div>
 
                 <div class="achievements-box">
                     
-                    <h2>Eat it</h2>
-                    <p>Personal Reponsive Portfolio of mine</p>
+                    <i class='bx bxs-graduation'></i>
+                    <h2>Academic Scholarships</h2>
                     <ul>
-                        <li>Language : html and css</li>
-                        <li>Framework : Vanila Js</li>
-                        <li>Environment : Vs Code </li>
-                    </ul>
-                    <a href="#">Learn more</a>
-                </div>
-
-                <div class="achievements-box">
-                    
-                    <h2>Behula</h2>
-                    <p>Personal Reponsive Portfolio of mine</p>
-                    <ul>
-                        <li>Language : html and css</li>
-                        <li>Framework : Vanila Js</li>
-                        <li>Environment : Vs Code </li>
-                    </ul>
-                    <a href="#">Learn more</a>
-                </div>
-
-                <div class="achievements-box">
-                    
-                    <h2>Athenic Quest</h2>
-                    <p>Personal Reponsive Portfolio of mine</p>
-                    <ul>
-                        <li>Language : html and css</li>
-                        <li>Framework : Vanila Js</li>
-                        <li>Environment : Vs Code </li>
+                        <li>HSC Scholarship 2019 - General</li>
+                        <li>SSC Scholarship 2017 - Talentpool</li>
+                        <li>JSC Scholarship 2014 - Talentpool </li>
+                        <li>PSC Scholarship 2011 - Talentpool </li>
                     </ul>
                     <a href="#">Learn more</a>
                 </div>
@@ -515,6 +524,38 @@
         </div>
     </section>
 
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1> 
+                  <p><i class='bx bxs-send'></i>horipriya288@gmail.com</p> 
+                  <p><i class='bx bxs-phone-call'></i>01726899607</p>
+                  <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    
+                  </div>
+                    <a href="images/arpita-2.jpg" download  class="btn btn4">Download CV</a>
+    
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                  
+                    <span id="msg"></span>
+    
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="main.js"></script>
     
 </body>
 </html>

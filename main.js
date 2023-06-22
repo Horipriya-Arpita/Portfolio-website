@@ -1,4 +1,4 @@
-/*const skillsContent = document.getElementsByClassName('skills-content'),
+const skillsContent = document.getElementsByClassName('skills-content'),
 skillsHeader = document.querySelectorAll('.skills-header')
 
 function toggleSkills(){
@@ -14,7 +14,25 @@ function toggleSkills(){
 }
 
 skillsHeader.forEach((eL)=>{
-    el.addEventListener('click', toggleSkills)
+    eL.addEventListener('click', toggleSkills)
 })
-*/
-console.log("Hiiii!");
+
+/*
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click',() =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('qualification-active')
+        })
+        target.classList.add('qualification-active')
+
+        tabs.forEach(tab =>{
+            tab.classList.remove('qualification-active')
+        })
+        tab.classList.add('qualification-active')
+    })
+})*/
